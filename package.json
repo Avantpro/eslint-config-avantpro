@@ -1,6 +1,6 @@
 {
   "name": "@avantpro/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Configuração ESLint usada pelo avantpro",
   "main": "index.js",
   "repository": {
