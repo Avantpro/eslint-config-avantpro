@@ -1,9 +1,32 @@
 {
-  "name": "eslint-config-avantpro",
+  "name": "@avantpro/eslint-config",
   "version": "1.0.0",
   "description": "Configuração ESLint usada pelo avantpro",
   "main": "index.js",
-  "repository": "git@github.com:Avantpro/eslint-config-avantpro.git",
+  "repository": {
+    "type":"git",
+    "url":"git+https://github.com/Avantpro/eslint-config-avantpro.git"
+  },
   "author": "Carloslauriano <carlos.h.lauriano@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": ">=4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2"
+  },
+  "bugs":{
+    "url": "https://github.com/Avantpro/eslint-config-avantpro/issues"
+  },
+  "homepage": "https://github.com/Avantpro/eslint-config-avantpro#README"
 }
