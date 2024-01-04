@@ -1,0 +1,9 @@
+{
+  "name": "eslint-config-avantpro",
+  "version": "1.0.0",
+  "description": "Configuração ESLint usada pelo avantpro",
+  "main": "index.js",
+  "repository": "git@github.com:Avantpro/eslint-config-avantpro.git",
+  "author": "Carloslauriano <carlos.h.lauriano@gmail.com>",
+  "license": "MIT"
+}
