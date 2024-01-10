@@ -23,8 +23,6 @@ npm i -D @avantpro/eslint-config
 ou
 
 yarn add -D @avantpro/eslint-config
-
-
 ```
 
 Dentro do `.eslintrc.json`
