@@ -5,7 +5,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    '@typescript-eslint/eslint-plugin'
+    '@typescript-eslint/eslint-plugin',
+    'eslint-plugin-import-helpers'
   ],
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -16,6 +17,19 @@ module.exports = {
     jest: true,
   },
   rules: {
+    'import-helpers/order-imports': [
+      'error',
+      { 
+        newlinesBetween: 'ignore',
+        groups: [
+          'module',
+          '/^@[a-zA-Z]+/',
+          ['parent', 'sibling'],
+          'index',
+        ],
+        alphabetize: { order: 'asc', ignoreCase: true },
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
@@ -26,13 +40,13 @@ module.exports = {
         arrowParens: 'always',
         semi: false,
       },
-      
+
     ],
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'semi': 'off',
     'comma-spacing': [
       'error',
@@ -44,7 +58,7 @@ module.exports = {
   },
   settings: {
     'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts','.tsx','.d.ts'],
+      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
   },
 }
