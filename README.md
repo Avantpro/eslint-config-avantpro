@@ -11,14 +11,18 @@ Configuração ESLint usada pelo avantpro
 
 ### Node.js
 
+Projeto:
+
+- Projeto com TypeScript configurado
+
 Instalar dependências:
 
 ```
-npm i -D eslint prettier @avantpro/eslint-config/node @typescript-eslint/parser eslint-config-prettier eslint-plugin-import-helpers eslint-plugin-prettier
+npm i -D @avantpro/eslint-config
 
 ou
 
-yarn add -D eslint prettier @avantpro/eslint-config/node @typescript-eslint/parser eslint-config-prettier eslint-plugin-import-helpers eslint-plugin-prettier
+yarn add -D @avantpro/eslint-config
 
 
 ```
