@@ -19,7 +19,7 @@ module.exports = {
   rules: {
     'import-helpers/order-imports': [
       'error',
-      { 
+      {
         newlinesBetween: 'ignore',
         groups: [
           'module',
@@ -46,6 +46,10 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    'no-useless-constructor': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'semi': 'off',
